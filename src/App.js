@@ -19,6 +19,13 @@ class App extends Component {
     })
   }
 
+  handleChange = e => {
+    this.setState({
+      input: e.target.value
+    });
+  };
+
+
 
   render(){
 
@@ -29,7 +36,8 @@ class App extends Component {
 
     console.log(gt);
     console.log(whitoutNumber);
-    console.log(this.state.input);
+    console.log(e.target);
+    
 
 
 
