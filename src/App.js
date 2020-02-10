@@ -1,5 +1,7 @@
 import React, {Component} from 'react';
 import Menu from './Menu'
+import Input from './Input'
+import AddBtn from './AddBtn';
 
 class App extends Component {
 
@@ -36,7 +38,6 @@ class App extends Component {
 
     console.log(gt);
     console.log(whitoutNumber);
-    console.log(e.target);
     
 
 
@@ -54,6 +55,8 @@ class App extends Component {
         <div>number: {this.state.number}</div>
         <button onClick={this.aaa}>Increase</button>
         <button onClick={this.bbb}>Decrease</button>
+        <Input/>
+        <AddBtn/>
       </div>
     )
   }
